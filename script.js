@@ -6,7 +6,7 @@ let delta = 70;
 window.onscroll = () => {
     let curPos = window.pageYOffset;
 
-    if((Math.abs(prevPos - curPos)) >= delta) {
+    if((Math.abs(prevPos - curPos)) >= delta || curPos > prevPos) {
 
         if(prevPos > curPos) {
             header.style.top = '0';
