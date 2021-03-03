@@ -11,6 +11,7 @@ a {
 /* HEADER*/
 .header {
     border-bottom: 1px solid #ccc;
+    background-color: antiquewhite;
 }
 
 .header-top {
@@ -37,12 +38,12 @@ a {
     list-style: none;
     flex: 1;
     text-align: center;
+    border: 1px solid rgba(0 0 0 / .08);
 }
 
 .menu-item__name {
     display: block;
     padding: 1em;
-    background-color: antiquewhite;
     transition: .25s;
 }
 
