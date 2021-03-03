@@ -4,14 +4,56 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+/* HEADER*/
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
     border-bottom: 1px solid #ccc;
 }
 
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1em;
+}
+
+.header-contacts {
+    display: flex;
+}
+
+.header-contacts__phone {
+    margin-left: 1em;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-item {
+    list-style: none;
+    flex: 1;
+    text-align: center;
+}
+
+.menu-item__name {
+    display: block;
+    padding: 1em;
+    background-color: antiquewhite;
+    transition: .25s;
+}
+
+.menu-item__name:hover {
+    background-color: sandybrown;
+}
+/* END HEADER*/
+
+
+
+/* CONTENT */
 .full-page {
     min-height: 100vh;
     width: 100vw;
@@ -32,3 +74,4 @@
 .full-page.third {
     background-color: lightgreen;
 }
+/* END CONTENT */
