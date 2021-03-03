@@ -12,6 +12,10 @@ a {
 .header {
     border-bottom: 1px solid #ccc;
     background-color: antiquewhite;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: .5s;
 }
 
 .header-top {
