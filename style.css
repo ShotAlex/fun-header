@@ -12,17 +12,13 @@ a {
 .header {
     border-bottom: 1px solid #ccc;
     background-color: antiquewhite;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: .5s;
 }
 
 .header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5em 1em;
+    padding: 2em;
 }
 
 .header-contacts {
@@ -31,6 +27,13 @@ a {
 
 .header-contacts__phone {
     margin-left: 1em;
+}
+/* FIXED MENU */
+#menu {
+    /* position: fixed; */
+    width: 100%;
+    transition: .2s;
+    background-color: antiquewhite;
 }
 
 .menu {
