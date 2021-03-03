@@ -13,8 +13,12 @@ let delta = 70;
 window.onscroll = () => {
     let curPos = window.pageYOffset
 
-    if (headerHeight > curPos) {
+    if (headerTopHeight > curPos) {
+        menu.style.transform = '0s'
         menu.style.position = 'static'
+    } else if (curPos >= headerTopHeight && curPos < headerHeight) {
+        menu.style.transform = '0.2s'
+        menu.style.top = '0'
     } else {
         menu.style.top = `${-menuHeight}px`
         menu.style.position = 'fixed'

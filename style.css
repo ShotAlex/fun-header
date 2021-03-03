@@ -30,9 +30,8 @@ a {
 }
 /* FIXED MENU */
 #menu {
-    /* position: fixed; */
     width: 100%;
-    transition: .2s;
+    /* transition: .2s;s */
     background-color: antiquewhite;
 }
 
