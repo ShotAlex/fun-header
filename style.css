@@ -33,7 +33,16 @@ a {
     width: 100%;
     transition: .2s;
     background-color: antiquewhite;
+    top: 0;
 }
+
+.fixed {
+    position: fixed;
+}
+
+
+/* END FIXED MENU */
+
 
 .menu {
     display: flex;
