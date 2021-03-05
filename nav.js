@@ -14,14 +14,14 @@ let dotShow = headerHeight;
 
 window.onscroll = function() {
     visibleMenu()
-    // window.requestAnimationFrame(visibleMenu)
-    // window.webkitRequestAnimationFrame(visibleMenu)
+//     // window.requestAnimationFrame(visibleMenu)
+//     // window.webkitRequestAnimationFrame(visibleMenu)
 }
 
+// visibleMenu()
 
 function visibleMenu() {
     let curPos = window.pageYOffset;
-
 
     // top of the screen between Top Menu in Header
     if (headerTopHeight > curPos) {
@@ -29,18 +29,20 @@ function visibleMenu() {
         header.style.paddingBottom = 0;
 
     // top of the screen between Menu in Header
-    } else if (curPos > headerTopHeight && curPos <= headerHeight) {
+    } else if (curPos > headerTopHeight && curPos < headerHeight) {
         menu.style.transform = 'translateY(0px)';
-
 
     // top of the screen on rest of the page
     } else {
-        menu.classList.add('fixed')
+        menu.style.top = `${-menuHeight}px`
         header.style.paddingBottom = `${menuHeight}px`
+        menu.classList.add('fixed')
 
         if(curPos < prevPos) {
             if(dotShow - curPos > delta) {
-                menu.style.transform = 'translateY(0px)';
+                // menu.style.transform = 'translateY(0px)';
+                menu.style.transform = `translateY(${menuHeight}px)`;
+
             }
         } else {
             menu.style.transform = `translateY(-${menuHeight}px)`;
@@ -48,7 +50,6 @@ function visibleMenu() {
         }
         prevPos = curPos;
     }
-
 }
 
 
